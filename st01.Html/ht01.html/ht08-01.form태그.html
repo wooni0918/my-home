@@ -9,18 +9,49 @@
     <!--form 태그-->
     <h2>네이버에서 "멕시코" get으로 검색 요청하기</h2>
     https://search.naver.com/search.naver?query=멕시코
+    <form action="https://search.naver.com/search.naver" method="get">
+        <input type="text" name="query" id="" value="멕시코">
+        <input type="text" name="name" id="">
+        <input type="submit" value="전송">
+    </form>
     <hr />
 
     <h2>다음에서 "멕시코" get으로 검색 요청하기</h2>
     https://search.daum.net/search?q=멕시코
-
+    <form action="https://search.daum.net/search" method="get">
+        <input type="text" name="q" id="" value="멕시코">
+        <input type="submit" value="전송">
+    </form>
     <hr />
 
     <h2>네이버에서 "멕시코" post로 요청하기</h2>
+    <form action="https://search.naver.com/search.naver?query" method="post">
+        <input type="text" name="" id="" value="멕시코">
+        <input type="submit" value="검색">
+    </form>
     <hr />
 
     <h2>구글에서 "멕시코" get으로 검색 요청하기</h2>
     https://www.google.com/search?q=멕시코
+    <form action="https://www.google.com/search" method="get">
+        <input type="text" name="q" id="" value="멕시코">
+        <input type="submit" value="검색">
+    </form>
 
 </body>
 </html>
+
+
+
+<!-- get - 서버로 보내려는 정보를 공개, url에 나옴/ post - 서버로 보내려는 정보를 비공개 -->
+
+
+<!--
+https://search.naver.com/search.naver?sm=top_hty&fbm=1&ie=utf8&query=%EB%A9%95%EC%8B%9C%EC%BD%94
+?를 기준으로.....주소?데이터
+
+
+
+
+폼을 실제로 작동시키기 위해서는 submit이 있어야 함
+-->

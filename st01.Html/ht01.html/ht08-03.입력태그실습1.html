@@ -12,9 +12,31 @@
 <body>
     <!-- fieldset & legend -->
     <!-- form 태그 필수 속성 추가. -->
-    <form>
+    <form action="" method="get">
+        <fieldset>            
+            <legend>입력 양식</legend>
+            <div>
+                <label for="a1">이름 : </label>
+                <input type="text" name="" id="a1" value="">
+            </div>
+            <div>
+                <label for="a2">이메일 : </label>
+                <input type="text" name="" id="a2" value="">
+            </div>
+            <input type="submit" value="쿼리 전송">
+        </fieldset>
     </form>
 
 </body>
 
 </html>
+
+
+<!-- 
+    
+label은 input 박스와 연결되어 있어 label을 클릭하면 해당 input으로 커서가 이동
+input id=""를 label for=""에 넣는다. 
+
+legend는 제목
+
+-->
