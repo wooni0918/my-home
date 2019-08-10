@@ -32,18 +32,43 @@
         .a2{
             display: inline-block;
         }
+
+        h1 {height:70px; background-color:#F46075;}
+
+        /* id="menu" */
+        #menu {list-style:none;}
+
+        /* class="item" */
+        .item {
+            display:inline-block;
+            /* float:left; */
+        }
+        .item a{text-decoration: none; color:black;}
+        
+        /* id="pet" */
+        #pet {border:1px solid gray;}
+
+        /* <p> */
+        P {
+            line-height:50px;
+            text-align:center;
+            background-color:darkgray;
+            height:50px;
+        }
+
     </style>
 </head>
 <body>
         <h1>입양하기</h1>
 
-        <ul>
-            <li><a href="#">애완견 종류</a></li>
-            <li><a href="#">입양하기</a></li>
-            <li><a href="#">건강돌보기</a></li>
-            <li><a href="#">더불어살기</a></li>
+        <ul id="menu">
+            <li class="item"><a href="#">애완견 종류</a></li>
+            <li class="item"><a href="#">입양하기</a></li>
+            <li class="item"><a href="#">건강돌보기</a></li>
+            <li class="item"><a href="#">더불어살기</a></li>
         </ul>
 
+        <div id="pet">
             <h2>강아지 용품 준비하기</h2>
             <ul>
                 <li>강아지 집 </li>
@@ -56,6 +81,8 @@
                 <li>귀 세정액, 구강스프레이, 기타 영양제 </li>
                 <li>샴푸, 린스, 애견용 타올 </li>
             </ul>
+        </div>
+            
 
         <p>Copyright 2012 funnycom</p>
 </body>

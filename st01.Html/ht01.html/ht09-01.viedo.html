@@ -9,12 +9,52 @@
             margin-top:20px;
             margin-left:50px;
         }
+
+        /* id="beach" */
+        #beach {
+            width:200px;
+            height:150px;
+        }
+
+        /* class="beach" */
+        .beach {
+            width:200px;
+            height:150px;
+        }
     </style>
 </head>
+
 <body>
     <h2>페인팅 동영상. Painting.mp4</h2>
+    <video src="../media/Painting.mp4" controls></video>
     <hr>
     
     <h2>해변 동영상. Beach.mp4. 너비는 200px, 높이는 150px</h2>
+    <!-- 
+        높이, 너비 지정 : 
+            1. width, height 속성 사용
+            2. inline 스타일 방식 (style 속성 사용)
+            3. 내부 스타일 방식 (style 태그 사용)
+     -->
+    <h3>태그의 width, height 속성 사용</h3>
+    <video src="../media/Beach.mp4" controls width="200" height="150"></video>
+    <hr>
+    <h3>inline 스타일 방식 (style 속성 사용)</h3>
+    <video src="../media/Beach.mp4" controls id="beach"></video>
+    <h3>내부 스타일 방식 (style 태그 사용, id속성, class속성을 사용 )</h3>
+    <video src="../media/Beach.mp4" controls id="beach"></video>
+    <video src="../media/Beach.mp4" controls class="beach"></video>
+    
 </body>
 </html>
+
+
+<!--
+    태그 찾기(6개)
+    1. 태그명 : p, img, a, video
+    2. id 속성 : #
+    3. class 속성 : .
+    4. 일반속성 : []
+    5. 
+
+-->>
