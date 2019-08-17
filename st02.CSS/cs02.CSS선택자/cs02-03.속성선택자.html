@@ -2,6 +2,18 @@
 <html>
 <head>
     <title>CSS3 Selector Basic Page</title>
+    <style>
+        input {background-color:yellow;}
+        /* <input type="text" /> */
+        input[type="text"] {background-color:red;}
+        /* <input name="password /"> */
+        input[type="password"] {background-color:blue;}
+        /* <input disabled /> */
+        input[disabled] {background-color:gray;}
+        /* 태그의 속성 중에 value 가 있는 태그의 배경색을 green으로 만드시오*/
+        [value] {background-color:green;}    /*    *[value] {background-color:green;}    */
+
+    </style>
 </head>
 <body>
     <input type="text" />
@@ -16,4 +28,4 @@
 
     <p type="text" name="password" value="findme" >  abc </p>
 </body>
-</html>
+</html>

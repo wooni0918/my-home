@@ -10,7 +10,14 @@
     *{margin:0; padding:0;}
 
     /* 다중선택자 */
-    h1,h2,h3,h4,h5,p{margin:10px; background-color:lightcyan;}
+    h1,h2,h3,h4,h5,h6,p{margin:10px; background-color:lightcyan;}
+
+    /* p.specials */
+    p.specials{color:blue;} /* p태그 중에 클래스 속성값 specials 찾기 */
+
+    /* <p id="footer"> */
+    p#footer{color:red;}
+    #footer{color:green;}
     </Style>
 </head>
 <body>
@@ -21,10 +28,23 @@
     <h3>제목 글자</h3>
     <h4>제목 글자</h4>
     <h5>제목 글자</h5>
+    <h6>제목 글자</h6>
+    <p> 단락 </p>
 
     <hr>
 
-    <h2>스타일 표기법</h2>
-    <p> 단락 </p>
+    <!-- p.specials를 태그로 완성하시오 -->
+    <p class="specials">
+        p.specials 를 태그로 완성하시오
+    </p>
+
+    <div class="specials">
+        div.specials 를 태그로 완성하시오
+    </div>
+    
+    <!-- p#footer 를 태그로 완성하시오 -->
+    <p id="footer">
+        p#footer 를 태그로 완성하시오
+    </p>
 </body>
 </html>

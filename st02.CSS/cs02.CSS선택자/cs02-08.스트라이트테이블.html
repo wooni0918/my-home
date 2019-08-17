@@ -3,6 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>반응 선택자: 스트라이프 테이블 만들기</title>
+    <style>
+        /* 브라우저 스타일 초기화 */
+        *{margin:0; padding:0;}
+
+        /* 1. 홀수 tr 을 찾고 배경색으로 lightcoral을 설정하시오 */
+        thead > tr > th {
+            background-color:black;
+            color:white;
+        }
+
+        /* 2. 짝수 tr을 찾고 배경색으로 lightgray를 설정하시오 */
+        tbody > tr:nth-child(even) {
+            background-color:lightgray;
+        }
+
+        /* 3. 마우스 오버시 배경색으로 lightblue를 설정하시오 */
+        tbody > tr:hover {
+            background-color:lightblue;
+        }
+
+    </style>
 </head>
 <body>
     <pre>    
@@ -16,33 +37,69 @@
     <table>
         <thead>
             <tr>
-                <th>no</th><th>DepCode</th><th>DepName</th><th>Tel</th><th>Bigo</th>
+                <th>no</th>
+                <th>DepCode</th>
+                <th>DepName</th>
+                <th>Tel</th>
+                <th>Bigo</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>1</td><td>T0001</td><td>Management</td><td>1234-5678</td><td>15</td>
+                <td>1</td>
+                <td>T0001</td>
+                <td>Management</td>
+                <td>1234-5678</td>
+                <td>15</td>
             </tr>
             <tr>
-                <td>2</td><td>T0002</td><td>Service</td><td>9999-9999</td><td>5</td>
+                <td>2</td>
+                <td>T0002</td>
+                <td>Service</td>
+                <td>9999-9999</td>
+                <td>5</td>
             </tr>
             <tr>
-                <td>3</td><td>T0003</td><td>Design</td><td>9876-5432</td><td>11</td>
+                <td>3</td>
+                <td>T0003</td>
+                <td>Design</td>
+                <td>9876-5432</td>
+                <td>11</td>
             </tr>
             <tr>
-                <td>4</td><td>T0004</td><td>App</td><td>0234-5678</td><td>7</td>
+                <td>4</td>
+                <td>T0004</td>
+                <td>App</td>
+                <td>0234-5678</td>
+                <td>7</td>
             </tr>
             <tr>
-                <td>5</td><td>T0005</td><td>Platform</td><td>9999-7777</td><td>22</td>
+                <td>5</td>
+                <td>T0005</td>
+                <td>Platform</td>
+                <td>9999-7777</td>
+                <td>22</td>
             </tr>
             <tr>
-                <td>6</td><td>T0006</td><td>WebDev</td><td>0904-5678</td><td>10</td>
+                <td>6</td>
+                <td>T0006</td>
+                <td>WebDev</td>
+                <td>0904-5678</td>
+                <td>10</td>
             </tr>
             <tr>
-                <td>7</td><td>T0007</td><td>Cloud</td><td>9876-5432</td><td>30</td>
+                <td>7</td>
+                <td>T0007</td>
+                <td>Cloud</td>
+                <td>9876-5432</td>
+                <td>30</td>
             </tr>
             <tr>
-                <td>8</td><td>T0008</td><td>Market</td><td>0999-7777</td><td>8</td>
+                <td>8</td>
+                <td>T0008</td>
+                <td>Market</td>
+                <td>0999-7777</td>
+                <td>8</td>
             </tr>
         </tbody>
     </table>

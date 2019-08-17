@@ -3,8 +3,44 @@
 <head>
     <meta charset="utf-8">
     <title>marign 실습</title>
+    <style>
+    div{
+        width:200px;
+        height:100px;
+        background:darkblue;
+    }
+    div.box1 {  
+        margin:30px 50px 30px 50px;
+    }
+    div.box2 {
+        margin:30px 50px;
+    }
+    div.box3 {
+        margin:50px 50px 50px 50px;
+    }
+    div.box3 {
+        margin:50px;
+    }
+    div.box4 {
+        margin:30px 5px 10px 5px;
+    }
+    div.box4 {
+        margin:30px 5px 10px;
+    }
+    </style>
 </head>
 <body>
+    <pre>
+        모든 div 태그의 너비는 200px, 높이는 100px; 배경색은 darkblue로 만드시오.
+        1. box1의 margin 설정
+            top:30px, right:50px; bottom:30px, left:50px
+        2. box2의 margin 설정
+            top:30px, right:50px; bottom:30px, left:50px
+        3. box3의 margin 설정
+            top:50px, right:50px; bottom:50px, left:50px
+        4. box4의 margin 설정
+            top:30px, right:5px; bottom:10px, left:5px
+    </pre>
     <div class="box1"></div>
     <hr>
     <div class="box2"></div>
@@ -16,4 +52,4 @@
     
     <span class="box4"></span>
 </body>
-</html>
+</html>

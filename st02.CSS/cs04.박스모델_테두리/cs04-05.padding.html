@@ -3,6 +3,23 @@
 <head>
     <meta charset="utf-8">
     <title>padding 실습</title>
+    <style>
+        /* p태그 초기화 */
+        p {margin:0; padding:0;}
+        div {
+            width:200px; /* 너비 */
+            height:auto; /* 높이 */
+            background:lightblue; /* 배경색 */
+            margin:15px; /* 마진 - 15px 15px 15px 15px */
+            color:white; /* 글자색 */
+        }
+        div > p {background:#0094ff;}
+        div.box1, div.box2, div.box3 {float:left;}
+        div.box1 { padding:10px 30px 10px 30px; }
+        div.box2 { padding:10px 30px /* 10px 30px */ ; }
+        div.box3 { padding:10px /* 10px 10px 10px */ ; }
+        
+    </style>
 </head>
 <body>
     <div>
@@ -12,14 +29,14 @@
     <div class="box1">
         <p>패딩(padding)이란 콘텐츠 영역과 테두리 사이의 여백을 말합니다.</p> 
     </div>
-    <hr>
+   
     <div class="box2">
         <p>패딩(padding)이란 콘텐츠 영역과 테두리 사이의 여백을 말합니다.</p> 
     </div>
-    <hr>
+   
     <div class="box3">
         <p>패딩(padding)이란 콘텐츠 영역과 테두리 사이의 여백을 말합니다.</p> 
     </div>
 
 </body>
-</html>
+</html>

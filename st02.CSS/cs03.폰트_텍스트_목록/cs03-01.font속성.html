@@ -3,6 +3,41 @@
 <head>
     <meta charset="utf-8">
     <title>폰트 CSS 속성</title>
+    <style>
+    /* <p id="font1"> */
+        P#font1 {
+            font-family: serif, "맑은고딕";
+        }
+    /* <p id="font2"> */
+        p#font2 {
+            font-family: "나눔고딕", "맑은고딕";
+        }
+    /* <p class="size1"> */
+    p.size1 {font-size:24px;}    
+    /* <p class="size2"> */
+    p.size2 {font-size:200%;}    
+    /* <p class="size3"> */
+    p.size3 {font-size:3em;}
+
+    /* @import를 사용한 외부 폰트 사용. 나눔브러쉬 폰트 사용 */
+    /* <p id="font3"> */
+    @import url(http://fonts.googleapis.com/earlyaccess/nanumbrushscript.css);
+    p#font3 {
+        font-family: 'Nanum Brush Script', '맑은고딕';
+        font-size:30px;
+    }
+
+    /* @font-face를 사용한 외부 폰트 사용. 나눔 바른 고딕 폰트 사용 */   
+    /* <p id="font5"> */ 
+    @font-face {
+        src: url(http://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff) format('woff');
+        font-family: 'NanumBarunGothicWebBold';
+    }
+    p#font5{
+        font-family: 'NanumBarunGothicWebBold','맑은고딕';
+    }
+    </style>
+    
 </head>
 <body>
     <pre>
@@ -32,10 +67,10 @@
 
 
     <h2>font-size 설정 : 단위: px, %(부모 태그를 기준으로), em(대문자M을 기준으르) </h2>
-    <p> font-size 속성 적용 전 . M </p>
-    <p class = "size1"> font-size 속성 값 : px </p>
-    <p class = "size2"> font-size 속성 값 : % </p>
-    <p class = "size3"> font-size 속성 값 : em </p>
+    <p> font-size 속성 적용 전 . M font-size 디폴트값 :16px;</p>
+    <p class = "size1"> font-size 속성 값 : 24px </p>
+    <p class = "size2"> font-size 속성 값 : 200% == 32px </p>
+    <p class = "size3"> font-size 속성 값 : 3em == 48px </p>
 
 
     <h2>font-style 설정</h2>
