@@ -2,6 +2,26 @@
 <html>
 <head>
     <title>text-overflow</title>
+    <style>
+        /* CSS 초기화 */
+        /* div class="a" */
+        div.a {
+            width: 100px;
+            border: 2px solid green;
+            /* 줄바꿈 안되게 설정*/
+            white-space: nowrap;
+            /* white-space: wrap; 줄바꿈 허용 */
+            /* 태그의 영역을 벗어나는 것들 감추기 */
+            overflow:hidden;
+            /* 텍스트가 영역을 벗어나는 경우에 축약 기호 표시 설정 */
+            text-overflow:ellipsis; 
+        }
+        div.a:hover {
+            white-space:normal;
+            width:250px;
+
+        }
+    </style>
 </head>
 <body>
     <h1>The text-overflow</h1>

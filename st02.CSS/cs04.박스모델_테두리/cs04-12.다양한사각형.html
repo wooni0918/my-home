@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <title>박스모델</title>
     <style>
-    div#borderstyle > div, div#bordercolor > div, div#borderwidth > div{width:200px; height:100px; background-color:gray; margin:20px; float:left;}
+    div#borderstyle > div, div#bordercolor > div, div#borderwidth > div{width:200px; height:100px; background-color:white; margin:20px; float:left;}
     div#borderstyle::after, div#bordercolor::after, div#borderwidth::after {content:''; display:block; clear:both;}
     div.box1{border-style:solid;}
     div.box2{border-style:dotted;}
     div.box3{border-style:dashed;}
-    div.box4{border-top-style:solid; border-right-style:dotted; border-bottom-style:dashed; border-left-style:none;}
+    div.box4{border-top-style:solid; border-right-style:dotted; border-bottom-style:dashed; border-left-style:double;}
 
     #bordercolor .box1 {border-color:red;}
     #bordercolor .box2 {border-color:blue;}
@@ -17,7 +17,8 @@
     #bordercolor .box4 {border-top-color: black; border-right-color: red; border-bottom-color:blue; border-left-color:yellow;}
 
     #borderwidth .box1 {border: 1px solid black;}
-    #borderwidth .box2 {border-top: 5px solid black; border-left:10px solid black; border-bottom: 5px solid black; border-right:10px solid black;}
+    #borderwidth .box2, #borderwidth .box3 {border-top: 5px solid black; border-left:10px solid black; border-bottom: 5px solid black; border-right:10px solid black;}
+    #borderwidth .box4, #borderwidth .box5 {border-top:10px solid black; border-right:15px solid black; border-bottom:20px solid black; border-left:30px solid black;} 
 
     </style>
 </head>
