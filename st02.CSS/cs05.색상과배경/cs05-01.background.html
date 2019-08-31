@@ -68,19 +68,25 @@
         #position div { width:1024px; height:228px; margin:20px; padding: 40px;  background-image:url(../images/bg2.jpg); background-repeat: no-repeat; box-sizing:border-box;}
         #position .bg1 {background-position: left top;}
         /*#position .bg2 {background-position: right top;}*/
-        #position .bg2 {background-position: center;}
-        #position .bg3 {background-position: bottom;}
+        #position .bg2 {background-position: left center;}
+        #position .bg3 {background-position: left bottom;}
 
 
         #size{width:1400px;}
         #size::after {content:''; display:block; clear:both;}
-        #size div {float:left; width:300px; height:300px; margin:20px; padding: 40px; border:1px solid black; background-image:url(../images/bg4.jpg); background-repeat: no-repeat;}
+        #size div {float:left; width:300px; height:300px; background:#fff; margin:20px; padding: 40px; border:1px solid black; background-image:url(../images/bg4.jpg); background-repeat: no-repeat;}
         #size .bg1 {background-size:auto;}
         #size .bg2 {background-size: 200px 150px;}
         #size .bg3 {background-size: 60% 40%;}
         #size .bg4 {background-size: contain;}
         #size .bg5 {background-size: cover;}
         #size .bg6 {background-size: 100% 100%;}
+
+
+        #attachment {width:800px;}
+        #attachment div {width:800px; height:800px; background-image:url(../images/bg2.jpg); background-repeat:no-repeat;}
+        #attachment .bg1 {background-attachment:scroll;}
+        #attachment .bg2 {background-attachment:fixed;}
        
     </style>
 </head>
@@ -197,6 +203,11 @@
         <div class="bg4">배경 이미지 사이즈 : contain</div>
         <div class="bg5">배경 이미지 사이즈 : cover</div>
         <div class="bg6">배경 이미지 사이즈 : 100% 100%</div>
+    </div>
+
+    <div id="attachment">
+        <div class="bg1">background-attachment : scroll</div>
+        <div class="bg2">background-attachment : fixed</div>
     </div>
 </body>
 </html>

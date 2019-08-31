@@ -8,6 +8,7 @@
         * {margin:0; padding:0;}
         body {font-family: "맑은 고딕"; color:white;}
         h1,h2 {color:lightblue;}
+        
 
         /* 꽉찬 페이지 배경 이미지 설정방법
             1. 이미지 경로 --> background-image:url();
@@ -16,7 +17,10 @@
             4. 이미지 스크롤 여부 설정 --> background-attachment:fixed;
             5. min-width, min-height 설정
         */
-        body {
+
+        /* div id="wrap" */
+        html, body {height:100%;}
+        div#wrap {
             background-image:url(./images/bg.jpg);
             background-repeat: no-repeat;
             background-size: cover;
