@@ -3,6 +3,28 @@
 <head>
     <meta charset="utf-8">
     <title>절대 좌표 실습</title>
+    <style>
+    /* CSS 초기화 */
+    * {padding:0; margin:0;}
+
+    /* <div class="absolute"> */
+    div.absolute {
+        position:absolute;
+        left:250px; /* x축 */ 
+        top:350px; /* y축 */
+        border: 1px solid gray
+    }
+    /*<h3 class="pos_left">*/
+    h3.pos_left {
+        position:relative;
+        left:-100px;
+    }
+    /*<h3 class="pos_right">*/
+    h3.pos_right {
+        position:relative;
+        left:100px;
+    }
+    </style>    
 </head>
 
 <body>

@@ -3,21 +3,40 @@
 <head>
     <meta charset="utf-8">
     <title>div 안에 div 가운데 정렬</title>
+    <style>
+    /* CSS 초기화 */    
+    * {padding:0; margin:0;}
+    /* div class="p" */
+    div.p {
+        width:400px;
+        height:200px;
+        border:1px solid red;
+    }
+
+    /* div class="c" */
+    div.c {
+        width:200px;
+        height:100px;
+        border:1px solid red;
+    }
+
+    /* div class="outer" */
+    </style>
 </head>
 <body>
     <h1> 수평 가운데 정렬 </h1>
 
     <h2>margin: auto </h2>
     <div class="p" style="text-align:center;">
-        <div class="c" style="margin: auto; ">
+        <div class="c" style="margin:auto; margin-top:50px; line-height:100px;">
             test
         </div>
     </div>
     <hr >
 	
     <h2>display:inline-block; </h2>
-    <div class="p" style="text-align:center;">
-        <div class="c" style="display:inline-block;  ">
+    <div class="p" style="text-align:center; padding-top:50px; box-sizing:border-box;">
+        <div class="c" style="display:inline-block; line-height:100px;">
             test
         </div>
     </div>
@@ -25,7 +44,7 @@
 	
     <h2>display: flex; align-items: center; </h2>
     <div class="p" style="display: flex; align-items:center;">
-        <div class="c" >
+        <div class="c" style="margin:auto; text-align:center; line-height:100px;">
             test
         </div>
     </div>
@@ -39,4 +58,4 @@
         </div>
     </div>
 </body>
-</html>
+</html>

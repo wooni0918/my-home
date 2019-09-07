@@ -3,6 +3,23 @@
 <head>
     <meta charset="utf-8">
     <title>position</title>
+    <style>
+    /* CSS 초기화 */
+    * {padding:0; margin:0;}
+
+    /* div id="wrap" > div */
+    div#wrap > div {height:50px; margin:0 10px;}
+    /* div id="pos1" */
+    div#pos1 {background-color:burlywood;}
+    div#pos2 {background-color:chartreuse;}
+    div#pos3 {background-color:cornflowerblue;}
+    
+    div#pos2 {
+        position: relative;
+        left:200px; /* x축 */
+        top:200px; /* y축 */
+    }
+    </style>
 </head>
 <body>
     <div id="wrap">
@@ -11,4 +28,4 @@
         <div id="pos3">세번째</div>
     </div>
 </body>
-</html>
+</html>

@@ -2,6 +2,34 @@
 <html>
 <head>
     <title>CSS3 Property Basic</title>
+    <style>
+    /* CSS 초기화 */
+    * {padding:0; margin:0;}
+
+    /* div id="wrapper" > div */
+    div#wrapper > div {
+        width:100px;
+        height:100px;
+        border:1px solid black;
+    }
+    div.box1 {background-color:red; position:relative; left:0; top:0;}
+    div.box2 {background-color:orange; position:relative; left:70px; top:-70px; z-index:10;}
+    div.box3 {background-color:royalblue; position:relative; left:20px; top:-130px;}
+
+    /* <div id="wrapper"> */
+    div#wrapper {
+        height:110px;
+        overflow: hidden;
+        border:2px solid black;
+    }
+
+    /*
+    div#wrapper {
+        height:110px;
+        overflow: scroll;
+        border:2px solid black;
+    }*/
+    </style>
 </head>
 <body>
     <h1>Lorem ipsum dolor amet</h1>
@@ -11,4 +39,4 @@
         <div class="box3"></div>
     </div>
 </body>
-</html>
+</html>

@@ -4,7 +4,51 @@
     <meta charset="UTF-8">
     <title>자식>자식>자식></title>
     <style>
+        /* CSS초기화 */
+        * {padding:0; margin:0;}
+        ul li {list-style-type:none;}
+
+        a {text-decoration: none;}
+        body > div {float:left; margin:50px 100px 10px;}
+        body::after {content:''; clear:both; display:block;}
+
+
+        /* menu1 */
+        ul#menu1
+
+
+
+
+
+
+        /* menu2 */
+        /* ul id="menu2" > li */
+        ul#menu2 > li {float:left; width:150px; height:40px; line-height:40px; border:1px solid gray; background-color:lightgray; text-align:center;}
+        ul#menu2 > li > a {color:black;}
+        ul#menu2 > li:hover {background-color:seagreen;}
+        ul#menu2 > li:hover > a {color:white;}
+        ul#menu2 > li:first-child {border-right:0;}
+        ul#menu2::after {content:''; clear:both; display:block;}
+        /* ul id="menu2" > li > ul */
+        ul#menu2 > li > ul {display:none;}
+        /* ul id="menu2" > li 에 마우스가 올라오면 */
+        ul#menu2 > li:hover > ul {display:block;}
+        ul#menu2 > li:hover > ul > li {border-top:1px solid gray; border-left:1px solid gray; border-right:1px solid gray; background-color: #f2f2f2;}
+        ul#menu2 > li:hover > ul > li:last-child {border-bottom:1px solid gray;}
+        ul#menu2 > li:hover > ul > li > a {color:black;}
+        ul#menu2 > li:hover > ul > li:hover {background-color:darkkhaki;}
+        ul#menu2 > li:hover > ul > li:hover > a {color:white;}
+
+
+        /*
+        ★depth2 만들기
+        #menu2 > li {float:left;}
+        #menu2 > li > ul {display:none;}
+        #menu2 > li:hover > ul {display:block;}        
+        */
     </style>
+
+    <link rel="stylesheet" href="./dropmenu.css">
 </head>
 <body>
     <div>

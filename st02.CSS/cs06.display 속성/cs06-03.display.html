@@ -3,6 +3,38 @@
     <head>
         <meta charset="utf-8">
         <title>display 속성</title>
+        <style>
+        * {padding:0; margin:0;}
+        /* <div id="inlineblock"> ~ <li> */
+        div#inlineblock nav {
+            background-color:cornflowerblue;
+            padding: 5px 0 5px 0;
+        }
+        div#inlineblock li {
+            list-style-type: none;
+            display: inline-block;
+            width: 120px;
+        }
+        div#inlineblock li a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        /* 테두리 */
+        /* div id="inline , <div id="block">"*/
+        div#inline, div#block {
+            border: 1px solid gray;
+            margin: 2px;
+            padding: 5px;
+        }
+
+        /* <div id="block"> <img> */
+        div#block img {
+            display:block;
+        }
+
+
+        </style>
     </head>
     <body>
         <h2>display 속성</h2>
@@ -29,4 +61,4 @@
             <img src="../images/pic3.jpg">
         </div>
     </body>
-</html>
+</html>

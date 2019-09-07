@@ -2,7 +2,25 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">    
-	<title>display flex</title>
+    <title>display flex</title>
+    <style>
+    /* CSS 초기화 */
+    * {padding:0; margin:0;}
+
+    /* html 페이지의 높이 설정 : 100% */
+    html, body {height:100%;}
+
+    /* 부모에 flex 설정 */
+    body {
+        display:flex;
+        flex-direction: column; /* 자식 박스의 정렬 방향 지정. 주축 방향을 지정하게 됨 */
+    }
+
+    /* 자식 설정 */
+    body > div {flex-shrink:0;} /* flex-shrink - 플렉스 박스 안의 플렉스 아이템의 크키가 넘칠 경우 크기를 줄일 수 있는 속성. 속성값은 비율로 조절 */
+    div.div1 {background-color:yellow;}
+    div.div2 {background-color:orange; flex-grow:1;} /* 자동으로 꽉찬 화면을 만듦 */
+    </style>
 </head>
 
 <body>
@@ -19,4 +37,4 @@
     </div>
 </body>
 
-</html>
+</html>

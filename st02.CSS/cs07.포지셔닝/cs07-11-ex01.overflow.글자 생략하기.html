@@ -2,6 +2,21 @@
 <html>
 <head>
     <title>Ellipsis</title>
+    <style>
+    /* cs04-19.text-overflow.html 참조 */
+
+    /* CSS 초기화 */
+    * {padding:0; margin:0;}
+    
+    body {width:300px; border:1px solid black; padding:10px;}
+    .ellipsis {
+        white-space: nowrap;
+        overflow:hidden;
+        text-overflow:ellipsis;
+        /* height:43px; */
+    }
+    /* white-space: nowrap;이나 height값을 줘야 overflow:hidden;이 적용된다 */
+    </style>
 </head>
 <body>
     <h1 class="ellipsis">

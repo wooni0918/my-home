@@ -3,6 +3,21 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    /* CSS 초기화 */
+    * {padding:0; margin:0;}
+    /* <div class="col-container"> */
+    div.col-container {
+        display:inline-block;
+        width:100%;
+    }
+
+    /* <div class="col-container"> <div class="col" */
+    div.col-container > div.col {
+        display:table-cell; /* 최신 브라우저에서만 가능(모바일, 크롬, 파이어 같은데서는 사용 가능) */
+        padding:20px;
+    }
+    </style>
 </head>
 
 <body>
@@ -36,4 +51,4 @@
 
 </body>
 
-</html>
+</html>
